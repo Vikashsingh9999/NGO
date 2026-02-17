@@ -1,0 +1,89 @@
+:root {
+  --color-bg-muted: #d6dad3;
+  --color-primary: #1479ad;
+  --color-accent: #cb9938;
+  --color-secondary: #923f22;
+  --color-earth: #7d7733;
+}
+
+/* Custom Styles & Resets */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #f8f9fa; /* Very light fallback */
+  color: #1f2937;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(5deg); }
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+.animate-float-delay {
+  animation: float 5s ease-in-out infinite 1s;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+}
+.animate-pulse-soft {
+  animation: pulse-soft 2s infinite;
+}
+
+/* Reveal on Scroll Class */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Form Elements */
+.custom-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(20, 121, 173, 0.2);
+}
+
+/* Utilities */
+.text-primary-custom { color: var(--color-primary); }
+.bg-primary-custom { background-color: var(--color-primary); }
+.text-accent-custom { color: var(--color-accent); }
+.bg-accent-custom { background-color: var(--color-accent); }
+.bg-muted-custom { background-color: var(--color-bg-muted); }
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Simple fade-in for tab content */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 220ms ease-out both;
+}
+

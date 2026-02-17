@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Anath Niradhar Sevabhavi Sanstha | ANSSNGO.ORG</title>
+    <meta name="description" content="Learn about ANSS: our story, mission, values, and the people behind Anath Niradhar Sevabhavi Sanstha (Est. 2021).">
+    <meta property="og:title" content="About ANSS - Anath Niradhar Sevabhavi Sanstha">
+    <meta property="og:description" content="Our story, mission, and values — and how your support changes children’s lives.">
+    <meta property="og:image" content="Images/Logo.png">
+    <meta property="og:url" content="https://anssngo.org/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="Images/Logo.png">
+    <link rel="apple-touch-icon" href="Images/Logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+
+<body class="antialiased selection:bg-[#cb9938] selection:text-white relative">
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919833234328" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white p-4 rounded-full shadow-xl transition-all hover:scale-110 flex items-center justify-center group">
+        <iconify-icon icon="solar:chat-round-dots-linear" width="28" stroke-width="2"></iconify-icon>
+        <span class="absolute right-full mr-3 bg-white text-gray-800 text-xs font-semibold px-2 py-1 rounded shadow opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Chat with us</span>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-40 top-0 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center">
+                    <img src="Images/Logo.png" alt="ANSSNGO.ORG - Anath Niradhar Sevabhavi Sanstha logo" class="h-9 sm:h-10 md:h-11 w-auto">
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="text-sm font-medium text-gray-600 hover:text-[#1479ad] transition-colors">Home</a>
+                    <a href="about.html" class="text-sm font-semibold text-[#1479ad]">About</a>
+                    <a href="programs.html" class="text-sm font-medium text-gray-600 hover:text-[#1479ad] transition-colors">Programs</a>
+                    <a href="impact.html" class="text-sm font-medium text-gray-600 hover:text-[#1479ad] transition-colors">Impact</a>
+                    <a href="team.html" class="text-sm font-medium text-gray-600 hover:text-[#1479ad] transition-colors">Team</a>
+                    <a href="contact.html" class="text-sm font-medium text-gray-600 hover:text-[#1479ad] transition-colors">Contact</a>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <a href="donate.html" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-semibold rounded-lg text-white bg-[#cb9938] hover:bg-[#b0842e] transition-all shadow-sm hover:shadow-md active:scale-95">
+                        <iconify-icon icon="solar:heart-angle-linear" class="mr-2" width="18"></iconify-icon>
+                        Donate
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100">
+                        <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html#home" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#1479ad]">Home</a>
+                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-semibold text-[#1479ad] bg-blue-50/40">About</a>
+                <a href="programs.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#1479ad]">Programs</a>
+                <a href="impact.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#1479ad]">Impact</a>
+                <a href="team.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#1479ad]">Team</a>
+                <a href="contact.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#1479ad]">Contact</a>
+                <a href="donate.html" class="block px-3 py-3 rounded-md text-base font-medium text-[#cb9938] font-semibold bg-orange-50 mt-2">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="pt-28 pb-14 lg:pt-36 lg:pb-20 bg-[#d6dad3]/25">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal active">
+                    <div class="inline-flex items-center px-3 py-1 rounded-full bg-[#1479ad]/10 border border-[#1479ad]/20 text-[#1479ad] text-xs font-semibold tracking-wide uppercase mb-6">
+                        About ANSS
+                    </div>
+                    <h1 class="text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 leading-[1.1] mb-5">
+                        A home of hope for children who need a family.
+                    </h1>
+                    <p class="text-gray-600 leading-relaxed text-lg max-w-xl">
+                        Anath Niradhar Sevabhavi Sanstha (ANSS) was founded in 2021 with a simple promise: every child deserves safety, dignity, education, and love.
+                    </p>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-3">
+                        <a href="donate.html" class="inline-flex items-center justify-center px-7 py-3 text-sm font-semibold rounded-xl text-white bg-[#cb9938] hover:bg-[#b0842e] transition-all shadow-md">
+                            Support a child today
+                            <iconify-icon icon="solar:arrow-right-linear" class="ml-2" width="18"></iconify-icon>
+                        </a>
+                        <a href="contact.html" class="inline-flex items-center justify-center px-7 py-3 text-sm font-semibold rounded-xl text-[#1479ad] border border-[#1479ad]/30 hover:bg-[#1479ad]/5 transition-all">
+                            Visit / Volunteer
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative reveal">
+                    <div class="absolute -top-5 -left-5 w-28 h-28 bg-[#cb9938]/20 rounded-full blur-xl"></div>
+                    <img src="Images/Gemini_Generated_Image_yqw7p3yqw7p3yqw7.png" alt="Children smiling" class="rounded-3xl shadow-2xl w-full object-cover h-[420px]">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Story + Values -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2 reveal">
+                    <h2 class="text-[#1479ad] font-semibold text-sm uppercase tracking-wider mb-3">Our Story</h2>
+                    <h3 class="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight mb-6">Founded with compassion, built with trust</h3>
+                    <div class="space-y-4 text-gray-600 leading-relaxed">
+                        <p>ANSS began with founders <span class="font-semibold text-gray-900">Santosh Aher</span> and <span class="font-semibold text-gray-900">Sheetal Aher</span>, who saw children facing life without a stable home. With limited resources but strong community support, a safe shelter became a caring home.</p>
+                        <p>Today, we focus on three outcomes: a safe place to live, consistent education, and emotional wellbeing. We work with local supporters, volunteers, and partners to keep children healthy, learning, and hopeful.</p>
+                        <div class="mt-6 grid sm:grid-cols-2 gap-6">
+                            <div class="p-5 rounded-2xl bg-[#d6dad3]/20 border border-[#d6dad3]/50">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <iconify-icon icon="solar:target-linear" class="text-[#923f22] text-2xl"></iconify-icon>
+                                    <h4 class="font-bold text-gray-900">Mission</h4>
+                                </div>
+                                <p class="text-sm text-gray-600">Provide holistic care—shelter, nutrition, education, healthcare, and guidance—so every child can thrive.</p>
+                            </div>
+                            <div class="p-5 rounded-2xl bg-[#d6dad3]/20 border border-[#d6dad3]/50">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <iconify-icon icon="solar:eye-linear" class="text-[#7d7733] text-2xl"></iconify-icon>
+                                    <h4 class="font-bold text-gray-900">Vision</h4>
+                                </div>
+                                <p class="text-sm text-gray-600">A society where every child—regardless of origin—has equal opportunity, dignity, and belonging.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="reveal">
+                    <div class="bg-gray-50 border border-gray-100 rounded-3xl p-8">
+                        <h4 class="font-bold text-gray-900 mb-4">Our Values</h4>
+                        <ul class="space-y-4 text-sm text-gray-600">
+                            <li class="flex gap-3">
+                                <iconify-icon icon="solar:heart-angle-linear" class="text-[#cb9938] text-xl"></iconify-icon>
+                                <div><span class="font-semibold text-gray-900">Care</span> — every child is treated like family.</div>
+                            </li>
+                            <li class="flex gap-3">
+                                <iconify-icon icon="solar:shield-check-linear" class="text-[#1479ad] text-xl"></iconify-icon>
+                                <div><span class="font-semibold text-gray-900">Safety</span> — a secure environment and responsible processes.</div>
+                            </li>
+                            <li class="flex gap-3">
+                                <iconify-icon icon="solar:document-text-linear" class="text-[#7d7733] text-xl"></iconify-icon>
+                                <div><span class="font-semibold text-gray-900">Transparency</span> — clear communication and impact reporting.</div>
+                            </li>
+                            <li class="flex gap-3">
+                                <iconify-icon icon="solar:users-group-rounded-linear" class="text-[#923f22] text-xl"></iconify-icon>
+                                <div><span class="font-semibold text-gray-900">Community</span> — working with supporters, donors, and volunteers.</div>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <a href="impact.html" class="inline-flex items-center text-[#1479ad] text-sm font-semibold hover:underline">
+                                Read our impact report
+                                <iconify-icon icon="solar:arrow-right-linear" class="ml-1"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-20 bg-[#f4f5f4]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+                <h2 class="text-[#923f22] font-semibold text-sm uppercase tracking-wider mb-3">Milestones</h2>
+                <h3 class="text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">A journey since 2021</h3>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm reveal">
+                    <div class="text-xs font-bold text-gray-500 uppercase mb-2">2021</div>
+                    <h4 class="font-bold text-gray-900 mb-2">Founded ANSS</h4>
+                    <p class="text-sm text-gray-600">Started with a small shelter and a big commitment to build a loving home.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm reveal">
+                    <div class="text-xs font-bold text-gray-500 uppercase mb-2">2022</div>
+                    <h4 class="font-bold text-gray-900 mb-2">Education support strengthened</h4>
+                    <p class="text-sm text-gray-600">Expanded school admissions, learning materials, and volunteer tutoring.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm reveal">
+                    <div class="text-xs font-bold text-gray-500 uppercase mb-2">2023–2024</div>
+                    <h4 class="font-bold text-gray-900 mb-2">Better health & wellbeing</h4>
+                    <p class="text-sm text-gray-600">Regular checkups, counselling, and skill programs to build confidence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-[#1479ad] text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[#0f5c85] opacity-40"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-3 gap-8 items-center">
+                <div class="lg:col-span-2 reveal">
+                    <h3 class="text-3xl lg:text-4xl font-bold tracking-tight mb-3">Be part of a child’s new beginning</h3>
+                    <p class="text-blue-100 leading-relaxed">Donate, volunteer, or partner with us. Every contribution helps build a safe home and a brighter future.</p>
+                </div>
+                <div class="flex flex-col gap-3 reveal">
+                    <a href="donate.html" class="inline-flex items-center justify-center px-7 py-3 text-sm font-semibold rounded-xl text-white bg-[#cb9938] hover:bg-[#b0842e] transition-all shadow-lg">
+                        Donate
+                        <iconify-icon icon="solar:arrow-right-linear" class="ml-2" width="18"></iconify-icon>
+                    </a>
+                    <a href="contact.html" class="inline-flex items-center justify-center px-7 py-3 text-sm font-semibold rounded-xl text-white/90 border border-white/25 hover:bg-white/10 transition-all">
+                        Volunteer / Visit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2a2d2a] text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 border-b border-gray-700 pb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <img src="Images/LogoDarkClean.png" alt="ANSSNGO.ORG - Anath Niradhar Sevabhavi Sanstha logo" class="h-10 w-auto">
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-sm mb-6">
+                        ANSS is dedicated to uplifting orphaned children by providing them with a home, education, healthcare, and the love they deserve.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><iconify-icon icon="logos:facebook" width="20"></iconify-icon></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><iconify-icon icon="logos:instagram-icon" width="20"></iconify-icon></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><iconify-icon icon="logos:youtube-icon" width="20"></iconify-icon></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-6">Explore</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-[#cb9938] transition-colors">About</a></li>
+                        <li><a href="programs.html" class="hover:text-[#cb9938] transition-colors">Programs</a></li>
+                        <li><a href="impact.html" class="hover:text-[#cb9938] transition-colors">Impact</a></li>
+                        <li><a href="team.html" class="hover:text-[#cb9938] transition-colors">Team</a></li>
+                        <li><a href="gallery.html" class="hover:text-[#cb9938] transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-6">Get Involved</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="donate.html" class="hover:text-[#cb9938] transition-colors">Donate</a></li>
+                        <li><a href="contact.html" class="hover:text-[#cb9938] transition-colors">Contact</a></li>
+                        <li><a href="privacy.html" class="hover:text-[#cb9938] transition-colors">Privacy</a></li>
+                        <li><a href="terms.html" class="hover:text-[#cb9938] transition-colors">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2024 ANSSNGO.ORG. All rights reserved.</p>
+                <p>Founders: Santosh Aher & Sheetal Aher</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/site.js"></script>
+</body>
+</html>
+
