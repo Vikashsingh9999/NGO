@@ -14,6 +14,24 @@ body {
   overflow-x: hidden;
 }
 
+/* Image Optimization */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent layout shift for images */
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+/* Lazy loading placeholder */
+img[loading="lazy"] {
+  background-color: #f3f4f6;
+  min-height: 200px;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -85,5 +103,81 @@ body {
 }
 .animate-fade-in {
   animation: fade-in 220ms ease-out both;
+}
+
+/* Heart Pop Animation (TikTok Style) */
+@keyframes heartPop {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.5) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(calc(-50% + var(--random-x, 0px)), calc(-50% + var(--random-y, -40px))) scale(1.2) rotate(15deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--random-x, 0px)), calc(-50% + var(--random-y, -80px))) scale(0.8) rotate(30deg);
+  }
+}
+
+.heart-emoji {
+  animation: heartPop 1.5s ease-out forwards;
+}
+
+/* Donate Button Click Animation */
+@keyframes donateClick {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1) rotate(2deg);
+  }
+  50% {
+    transform: scale(0.95) rotate(-2deg);
+  }
+  75% {
+    transform: scale(1.05) rotate(1deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.donate-click-animation {
+  animation: donateClick 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Donate Button Container - Ensure hearts can escape */
+.donate-btn-heart {
+  overflow: visible !important;
+}
+
+/* Boy Peeking Animation */
+@keyframes boyPeekBounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-8px) rotate(-5deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(5deg);
+  }
+}
+
+@keyframes speechBubble {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+}
+
+.speech-bubble {
+  animation: speechBubble 0.5s ease-out 1.5s both;
 }
 
